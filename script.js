@@ -4,7 +4,8 @@
 document.querySelectorAll("[id^="tab"]").addEventListener("click", function(event) {
 }
 
-    for(let i =0; i<clasesAccordion.length; i++){
+    clasesAccordion.forEach((item) => item.addEventListener
+             ("click", event))
         if(clasesAccordion[i].style.display == 'block'){
             continue;
         }else{
