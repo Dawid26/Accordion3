@@ -17,3 +17,23 @@ document.clasesAccordion[i].style.display = 'none';
 event.preventDefault();
 }, false);
     }
+
+    
+    //             //  
+let AccordionEl = document.querySelectorAll('.gs-faq__answer');
+let accordionBtn = document.querySelectorAll('[id*="tab"]');
+for (let i = 0; i < accordionBtn.length; i++) {
+
+
+
+    accordionBtn[i].addEventListener('click', () => {
+        for (let i = 0; i < accordionBtn.length; i++) {
+            if (accordionEl[i].style.display = "block") {
+                continue;
+            } else {
+                accordionEl[i].style.sisplay = "block";
+            }
+        }
+    });
+
+}
